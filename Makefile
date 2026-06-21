@@ -6,7 +6,7 @@ IMAGE_TAG=4.14.5
 WAZUH_IMAGE_VERSION=4.14.5
 WAZUH_TAG_REVISION=1
 
-run-agent:
+sh-agent:
 > docker exec -ti fp_soc_07-wazuh.agent-1 bash
 
 build-agent:
@@ -14,6 +14,9 @@ build-agent:
     docker build --no-cache -t "$(WAZUH_REGISTRY)/wazuh/wazuh-agent:$(IMAGE_TAG)" \
     --build-arg WAZUH_VERSION="$(WAZUH_IMAGE_VERSION)" \
     --build-arg WAZUH_TAG_REVISION="$(WAZUH_TAG_REVISION)" .
+
+sh-manager:
+> docker exec -ti fp_soc_07-wazuh.manager-1 bash
 
 up:
 > docker-compose up -d --remove-orphans

@@ -184,6 +184,10 @@
     <log_format>plain</log_format>
   </logging>
 
+  <localfile>
+    <log_format>apache</log_format>
+    <location>/var/log/nginx/access.log</location>
+  </localfile>
 </ossec_config>
 
 <ossec_config>
