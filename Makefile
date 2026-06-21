@@ -1,4 +1,20 @@
 .RECIPEPREFIX = >
+
+# Taken from https://github.com/wazuh/wazuh-docker.git on branch "v4.14.5"
+WAZUH_REGISTRY=docker.io
+IMAGE_TAG=4.14.5
+WAZUH_IMAGE_VERSION=4.14.5
+WAZUH_TAG_REVISION=1
+
+run-agent:
+> docker exec -ti fp_soc_07-wazuh.agent-1 bash
+
+build-agent:
+> cd ./config/wazuh_agent/build && \
+    docker build --no-cache -t "$(WAZUH_REGISTRY)/wazuh/wazuh-agent:$(IMAGE_TAG)" \
+    --build-arg WAZUH_VERSION="$(WAZUH_IMAGE_VERSION)" \
+    --build-arg WAZUH_TAG_REVISION="$(WAZUH_TAG_REVISION)" .
+
 up:
 > docker-compose up -d --remove-orphans
 
@@ -16,6 +32,3 @@ stress:
 
 status:
 > docker-compose ps
-
-agent:
-> docker exec -ti fp_soc_07-wazuh.agent-1 bash
