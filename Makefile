@@ -5,7 +5,7 @@ WAZUH_REGISTRY=docker.io
 IMAGE_TAG=4.14.5
 WAZUH_IMAGE_VERSION=4.14.5
 WAZUH_TAG_REVISION=1
-target=0.0.0.0
+target=0.0.0.0:8080
 
 build-agent:
 > cd ./config/wazuh_agent/build && \
@@ -28,8 +28,8 @@ clean:
 stop: down clean
 restart: stop up status
 
-stress:
-> for i in {1..100}; do curl -s -o /dev/null http://$(target):8080; done
+ddos:
+> for i in {1..100}; do curl -s -o /dev/null http://$(target); done
 
 status:
 > docker-compose ps
