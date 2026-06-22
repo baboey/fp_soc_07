@@ -1,0 +1,38 @@
+<!--
+Wazuh - Agent - Default configuration for amzn 2023
+More info at: https://documentation.wazuh.com
+Mailing list: https://groups.google.com/forum/#!forum/wazuh
+-->
+
+<ossec_config>
+    <client>
+        <server>
+            <address>CHANGE_MANAGER_IP</address>
+            <port>CHANGE_MANAGER_PORT</port>
+            <protocol>tcp</protocol>
+        </server>
+        <config-profile>amzn, amzn2023</config-profile>
+        <notify_time>10</notify_time>
+        <time-reconnect>60</time-reconnect>
+        <auto_restart>yes</auto_restart>
+        <crypto_method>aes</crypto_method>
+        <enrollment>
+            <enabled>yes</enabled>
+            <manager_address>CHANGE_ENROLL_IP</manager_address>
+            <port>CHANGE_ENROLL_PORT</port>
+            <agent_name>CHANGE_AGENT_NAME</agent_name>
+            <authorization_pass_path>etc/authd.pass</authorization_pass_path>
+            <groups>CHANGE_AGENT_GROUP</groups>
+        </enrollment>
+    </client>
+
+    <logging>
+        <log_format>plain</log_format>
+    </logging>
+
+    <localfile>
+        <log_format>apache</log_format>
+        <location>/var/log/nginx/access.log</location>
+    </localfile>
+
+</ossec_config>

@@ -5,9 +5,7 @@ WAZUH_REGISTRY=docker.io
 IMAGE_TAG=4.14.5
 WAZUH_IMAGE_VERSION=4.14.5
 WAZUH_TAG_REVISION=1
-
-sh-agent:
-> docker exec -ti fp_soc_07-wazuh.agent-1 bash
+target=0.0.0.0
 
 build-agent:
 > cd ./config/wazuh_agent/build && \
@@ -15,13 +13,13 @@ build-agent:
     --build-arg WAZUH_VERSION="$(WAZUH_IMAGE_VERSION)" \
     --build-arg WAZUH_TAG_REVISION="$(WAZUH_TAG_REVISION)" .
 
-sh-manager:
-> docker exec -ti fp_soc_07-wazuh.manager-1 bash
+certs: generate-indexer-certs.yml
+> docker compose -f generate-indexer-certs.yml run --rm generator
 
-up:
+up: docker-compose.yml
 > docker-compose up -d --remove-orphans
 
-down:
+down: docker-compose.yml
 > docker-compose down
 
 clean:
@@ -31,7 +29,16 @@ stop: down clean
 restart: stop up status
 
 stress:
-> for i in {1..100}; do curl -s http://0.0.0.0:8080 >/dev/null; done
+> for i in {1..100}; do curl -s -o /dev/null http://$(target):8080; done
 
 status:
 > docker-compose ps
+
+sh-agent:
+> docker exec -ti fp_soc_07-wazuh.agent-1 bash
+
+sh-manager:
+> docker exec -ti fp_soc_07-wazuh.manager-1 bash
+
+log-manager:
+> docker exec -ti fp_soc_07-wazuh.manager-1 /var/ossec/bin/wazuh-logtest
