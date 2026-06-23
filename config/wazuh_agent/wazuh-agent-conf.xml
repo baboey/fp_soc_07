@@ -35,4 +35,48 @@ Mailing list: https://groups.google.com/forum/#!forum/wazuh
         <location>/var/log/nginx/access.log</location>
     </localfile>
 
+    <syscheck>
+        <disabled>no</disabled>
+        <frequency>300</frequency>
+
+        <directories report_changes="yes" realtime="yes">/bin,/sbin,/boot,/etc,/usr/bin,/usr/sbin</directories>
+
+        <!-- Files/directories to ignore -->
+        <ignore>/etc/mtab</ignore>
+        <ignore>/etc/hosts.deny</ignore>
+        <ignore>/etc/mail/statistics</ignore>
+        <ignore>/etc/random-seed</ignore>
+        <ignore>/etc/random.seed</ignore>
+        <ignore>/etc/adjtime</ignore>
+        <ignore>/etc/httpd/logs</ignore>
+        <ignore>/etc/utmpx</ignore>
+        <ignore>/etc/wtmpx</ignore>
+        <ignore>/etc/cups/certs</ignore>
+        <ignore>/etc/dumpdates</ignore>
+        <ignore>/etc/svc/volatile</ignore>
+
+        <!-- File types to ignore -->
+        <ignore type="sregex">.log$|.swp$</ignore>
+
+        <!-- Check the file, but never compute the diff -->
+        <nodiff>/etc/ssl/private.key</nodiff>
+
+        <skip_nfs>yes</skip_nfs>
+        <skip_dev>yes</skip_dev>
+        <skip_proc>yes</skip_proc>
+        <skip_sys>yes</skip_sys>
+
+        <!-- Nice value for Syscheck process -->
+        <process_priority>10</process_priority>
+
+        <!-- Maximum output throughput -->
+        <max_eps>50</max_eps>
+
+        <!-- Database synchronization settings -->
+        <synchronization>
+            <enabled>yes</enabled>
+            <interval>5m</interval>
+            <max_eps>10</max_eps>
+        </synchronization>
+    </syscheck>
 </ossec_config>
