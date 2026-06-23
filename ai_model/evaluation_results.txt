@@ -1,0 +1,50 @@
+============================================================
+MODEL EVALUATION RESULTS
+============================================================
+
+Dataset: 618 alerts (225 TP, 393 FP)
+Train/Test split: 75/25 (stratified)
+Model: Random Forest (100 trees, max_depth=10)
+
+--- Test Set Metrics ---
+Accuracy:  1.0000
+Precision: 1.0000
+Recall:    1.0000
+F1-Score:  1.0000
+
+--- Confusion Matrix ---
+              Predicted FP  Predicted TP
+Actual FP:            99             0
+Actual TP:             0            56
+
+--- Cross-Validation (5-fold) ---
+F1 scores: ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']
+Mean F1:   1.0000 (+/- 0.0000)
+
+--- Top 10 Feature Importances ---
+  has_mitre                      0.1614
+  num_mitre_techniques           0.1532
+  has_attack_group               0.1510
+  num_groups                     0.1363
+  rule_level                     0.1323
+  rule_id_enc                    0.0889
+  log_length                     0.0576
+  is_manager_alert               0.0393
+  decoder_name_enc               0.0210
+  is_sca_decoder                 0.0139
+
+--- False Alarm Reduction ---
+Total FP alerts in test set:     99
+Correctly filtered (True Neg):   99
+False Alarm Reduction Rate:      100.0%
+Missed attacks (False Neg):       0
+
+--- Classification Report ---
+                precision    recall  f1-score   support
+
+false_positive       1.00      1.00      1.00        99
+ true_positive       1.00      1.00      1.00        56
+
+      accuracy                           1.00       155
+     macro avg       1.00      1.00      1.00       155
+  weighted avg       1.00      1.00      1.00       155

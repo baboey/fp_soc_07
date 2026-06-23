@@ -13,3 +13,89 @@
     </mitre>
   </rule>
 </group>
+
+<!-- Malware detection rules -->
+<group name="malware,syscheck,attack,">
+  <!-- Suspicious binary dropped in /tmp -->
+  <rule id="100010" level="12">
+    <if_sid>554</if_sid>
+    <match>/tmp/</match>
+    <description>Malware - Suspicious file created in /tmp directory</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+  </rule>
+
+  <!-- Suspicious binary dropped in web directory -->
+  <rule id="100011" level="13">
+    <if_sid>554</if_sid>
+    <match>/var/www/|/usr/share/nginx/</match>
+    <description>Malware - Suspicious file created in web directory (possible webshell)</description>
+    <mitre>
+      <id>T1505.003</id>
+    </mitre>
+  </rule>
+
+  <!-- Known malware filename patterns -->
+  <rule id="100012" level="14">
+    <if_sid>554</if_sid>
+    <regex>\.php$|\.sh$|reverse|shell|backdoor|payload|exploit</regex>
+    <description>Malware - File with suspicious name created</description>
+    <mitre>
+      <id>T1204</id>
+    </mitre>
+  </rule>
+
+  <!-- Executable permission change -->
+  <rule id="100013" level="10">
+    <if_sid>550</if_sid>
+    <regex>chmod|permissions changed</regex>
+    <description>Malware - File permissions changed (possible malware staging)</description>
+    <mitre>
+      <id>T1222</id>
+    </mitre>
+  </rule>
+</group>
+
+<!-- Social Engineering / Phishing rules -->
+<group name="social_engineering,phishing,attack,">
+  <!-- Phishing email detected in mail log -->
+  <rule id="100020" level="12">
+    <if_sid>1</if_sid>
+    <match>phishing|suspicious-link|verify-account|urgent-action|click-here</match>
+    <description>Social Engineering - Phishing email detected in mail log</description>
+    <mitre>
+      <id>T1566.001</id>
+    </mitre>
+  </rule>
+
+  <!-- User accessed known phishing/suspicious URL -->
+  <rule id="100021" level="12">
+    <if_sid>200, 31108</if_sid>
+    <regex>login-verify|account-update|secure-check|phish|fake-login|credential-harvest</regex>
+    <description>Social Engineering - Access to phishing URL detected</description>
+    <mitre>
+      <id>T1566.002</id>
+    </mitre>
+  </rule>
+
+  <!-- Suspicious outbound connection post-phishing (C2 callback) -->
+  <rule id="100022" level="13">
+    <if_sid>1</if_sid>
+    <regex>curl \S+://\d+\.\d+|wget \S+://\d+\.\d+|python -c|ncat \d+\.\d+</regex>
+    <description>Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)</description>
+    <mitre>
+      <id>T1071</id>
+    </mitre>
+  </rule>
+
+  <!-- Suspicious attachment/file downloaded after phishing -->
+  <rule id="100023" level="12">
+    <if_sid>554</if_sid>
+    <regex>\.exe$|\.bat$|\.ps1$|\.vbs$|\.scr$|\.jar$</regex>
+    <description>Social Engineering - Suspicious file downloaded (possible phishing payload)</description>
+    <mitre>
+      <id>T1204.002</id>
+    </mitre>
+  </rule>
+</group>

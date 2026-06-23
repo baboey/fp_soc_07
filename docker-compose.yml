@@ -9,7 +9,7 @@ services:
       - ./config/wazuh_agent/wazuh-agent-conf.xml:/wazuh-config-mount/etc/ossec.conf
       - ./config/wazuh_agent/mail/:/var/spool/mail/
     ports:
-      - "8080:80"
+      - "8082:80"
     networks:
       isolate:
           ipv4_address: 8.8.8.3

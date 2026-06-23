@@ -1,0 +1,47 @@
+{
+  "feature_columns": [
+    "rule_level",
+    "firedtimes",
+    "has_attack_group",
+    "has_sca_group",
+    "has_syscheck_group",
+    "has_web_group",
+    "has_ossec_group",
+    "num_groups",
+    "has_mitre",
+    "num_mitre_techniques",
+    "is_manager_alert",
+    "is_sca_decoder",
+    "is_syscheck_decoder",
+    "has_syscheck_data",
+    "is_file_added",
+    "is_file_modified",
+    "is_syscheck_location",
+    "is_log_location",
+    "log_length",
+    "has_suspicious_keywords",
+    "has_tmp_path",
+    "has_web_path",
+    "rule_id_enc",
+    "decoder_name_enc"
+  ],
+  "attack_rules": [
+    "100021",
+    "100013",
+    "100012",
+    "100020",
+    "100011",
+    "100001",
+    "100023",
+    "100010",
+    "100022"
+  ],
+  "attack_groups": [
+    "social_engineering",
+    "malware",
+    "attack",
+    "phishing"
+  ],
+  "model_file": "soc_rf_model.pkl",
+  "encoders_file": "label_encoders.pkl"
+}
