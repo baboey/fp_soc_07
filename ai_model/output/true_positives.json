@@ -1,12 +1,12 @@
 [
   {
-    "timestamp": "2026-06-23T08:41:10.455+0000",
+    "timestamp": "2026-06-24T17:57:12.242+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-8c9e81406306",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9915,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -20,7 +20,7 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T08:41:10.455+0000",
+      "timestamp": "2026-06-24T17:57:12.242+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -46,16 +46,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782204070.707629",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:10 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:10 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:08:41:09 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782323832.542",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -69,295 +69,13 @@
     }
   },
   {
-    "timestamp": "2026-06-23T10:22:43.588+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T10:22:43.588+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782210163.709482",
-      "full_log": "File '/tmp/exploit.sh' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/exploit.sh",
-        "mode": "realtime",
-        "size_after": "13",
-        "perm_after": "rwxr-xr-x",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "3b761392798edb762925fa3be36de0c4",
-        "sha1_after": "2eefcbb58c87f0f688399452d5d4faeefc8369ea",
-        "sha256_after": "2c8ddcd5ea443a6f5cfe2edc63b829e634712ce30c627f5b1b622297511e090e",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T10:22:43",
-        "inode_after": 569352,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T10:22:44.349+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T10:22:44.349+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 2,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782210164.710029",
-      "full_log": "File '/usr/share/nginx/html/reverse.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/usr/share/nginx/html/reverse.php",
-        "mode": "realtime",
-        "size_after": "32",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "389bf88a112568d61b75a7dcf0815a57",
-        "sha1_after": "979f1faba0b74f5387d3f53f66cd8dcfc19ffe7e",
-        "sha256_after": "18db3f6438cd7cbdce26c752c0d1343077e3c71ad89ebe4846445fa1858bd1c1",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T10:22:44",
-        "inode_after": 591315,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:10:32.013+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:10:32.013+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216632.710594",
-      "full_log": "Jun 23 10:35:01 agent root: curl http://10.20.30.40/payload executed by user after phishing",
-      "predecoder": {
-        "program_name": "root",
-        "timestamp": "Jun 23 10:35:01",
-        "hostname": "agent"
-      },
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:13:32.093+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:13:32.093+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 2,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216812.711307",
-      "full_log": "Jun 23 12:15:01 agent root: curl http://10.20.30.40/payload executed by user after phishing",
-      "predecoder": {
-        "program_name": "root",
-        "timestamp": "Jun 23 12:15:01",
-        "hostname": "agent"
-      },
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:14:47.935+0000",
+    "timestamp": "2026-06-24T17:57:14.131+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-8c9e81406306",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9925,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -371,7 +89,7 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:14:47.935+0000",
+      "timestamp": "2026-06-24T17:57:14.131+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -397,16 +115,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216887.711662",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782323834.1788",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -420,13 +138,13 @@
     }
   },
   {
-    "timestamp": "2026-06-23T12:14:47.935+0000",
+    "timestamp": "2026-06-24T17:57:14.233+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-8c9e81406306",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9977,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -440,76 +158,7 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:14:47.935+0000",
-      "rule": {
-        "level": 12,
-        "description": "DDoS detected",
-        "id": "100001",
-        "mitre": {
-          "id": [
-            "T1498"
-          ],
-          "tactic": [
-            "Impact"
-          ],
-          "technique": [
-            "Network Denial of Service"
-          ]
-        },
-        "frequency": 50,
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "web",
-          "nginx",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216887.712911",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:47 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "decoder": {
-        "name": "web-accesslog"
-      },
-      "data": {
-        "protocol": "GET",
-        "srcip": "8.8.8.1",
-        "id": "200",
-        "url": "/"
-      },
-      "location": "/var/log/nginx/access.log"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:14:49.882+0000",
-    "rule_id": "100001",
-    "rule_level": 12,
-    "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1498"
-      ],
-      "tactic": [
-        "Impact"
-      ],
-      "technique": [
-        "Network Denial of Service"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:14:49.882+0000",
+      "timestamp": "2026-06-24T17:57:14.233+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -535,16 +184,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216889.714160",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:48 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782323834.3035",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:17:57:12 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -558,13 +207,244 @@
     }
   },
   {
-    "timestamp": "2026-06-23T12:14:49.990+0000",
+    "timestamp": "2026-06-24T17:57:58.082+0000",
+    "rule_id": "100012",
+    "rule_level": 14,
+    "rule_description": "Malware - File with suspicious name created",
+    "agent": "wazuh-agent-8c9e81406306",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.999,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1204"
+      ],
+      "tactic": [
+        "Execution"
+      ],
+      "technique": [
+        "User Execution"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T17:57:58.082+0000",
+      "rule": {
+        "level": 14,
+        "description": "Malware - File with suspicious name created",
+        "id": "100012",
+        "mitre": {
+          "id": [
+            "T1204"
+          ],
+          "tactic": [
+            "Execution"
+          ],
+          "technique": [
+            "User Execution"
+          ]
+        },
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "malware",
+          "syscheck",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782323878.4282",
+      "full_log": "File '/tmp/backdoor.sh' added\nMode: realtime\n",
+      "syscheck": {
+        "path": "/tmp/backdoor.sh",
+        "mode": "realtime",
+        "size_after": "6",
+        "perm_after": "rw-r--r--",
+        "uid_after": "0",
+        "gid_after": "0",
+        "md5_after": "e6966da64b080ef46222fa43b337dbd4",
+        "sha1_after": "008afefee30b70e0e43cb8289daa8474994d76bd",
+        "sha256_after": "f299a401e4eeffacdf5db8d1090cc4e9aecf30aa3107c82854d8b255c2beae75",
+        "uname_after": "root",
+        "gname_after": "root",
+        "mtime_after": "2026-06-24T17:57:58",
+        "inode_after": 2897799,
+        "event": "added"
+      },
+      "decoder": {
+        "name": "syscheck_new_entry"
+      },
+      "location": "syscheck"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T17:58:23.279+0000",
+    "rule_id": "100012",
+    "rule_level": 14,
+    "rule_description": "Malware - File with suspicious name created",
+    "agent": "wazuh-agent-8c9e81406306",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9907,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1204"
+      ],
+      "tactic": [
+        "Execution"
+      ],
+      "technique": [
+        "User Execution"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T17:58:23.279+0000",
+      "rule": {
+        "level": 14,
+        "description": "Malware - File with suspicious name created",
+        "id": "100012",
+        "mitre": {
+          "id": [
+            "T1204"
+          ],
+          "tactic": [
+            "Execution"
+          ],
+          "technique": [
+            "User Execution"
+          ]
+        },
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "malware",
+          "syscheck",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782323903.4828",
+      "full_log": "File '/usr/share/nginx/html/shell.php' added\nMode: realtime\n",
+      "syscheck": {
+        "path": "/usr/share/nginx/html/shell.php",
+        "mode": "realtime",
+        "size_after": "6",
+        "perm_after": "rw-r--r--",
+        "uid_after": "0",
+        "gid_after": "0",
+        "md5_after": "e6966da64b080ef46222fa43b337dbd4",
+        "sha1_after": "008afefee30b70e0e43cb8289daa8474994d76bd",
+        "sha256_after": "f299a401e4eeffacdf5db8d1090cc4e9aecf30aa3107c82854d8b255c2beae75",
+        "uname_after": "root",
+        "gname_after": "root",
+        "mtime_after": "2026-06-24T17:58:23",
+        "inode_after": 2897881,
+        "event": "added"
+      },
+      "decoder": {
+        "name": "syscheck_new_entry"
+      },
+      "location": "syscheck"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T17:58:38.574+0000",
+    "rule_id": "100012",
+    "rule_level": 14,
+    "rule_description": "Malware - File with suspicious name created",
+    "agent": "wazuh-agent-8c9e81406306",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9907,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1204"
+      ],
+      "tactic": [
+        "Execution"
+      ],
+      "technique": [
+        "User Execution"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T17:58:38.574+0000",
+      "rule": {
+        "level": 14,
+        "description": "Malware - File with suspicious name created",
+        "id": "100012",
+        "mitre": {
+          "id": [
+            "T1204"
+          ],
+          "tactic": [
+            "Execution"
+          ],
+          "technique": [
+            "User Execution"
+          ]
+        },
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "malware",
+          "syscheck",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "002",
+        "name": "wazuh-agent-8c9e81406306",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782323918.5389",
+      "full_log": "File '/usr/share/nginx/html/shelly.php' added\nMode: realtime\n",
+      "syscheck": {
+        "path": "/usr/share/nginx/html/shelly.php",
+        "mode": "realtime",
+        "size_after": "6",
+        "perm_after": "rw-r--r--",
+        "uid_after": "0",
+        "gid_after": "0",
+        "md5_after": "e6966da64b080ef46222fa43b337dbd4",
+        "sha1_after": "008afefee30b70e0e43cb8289daa8474994d76bd",
+        "sha256_after": "f299a401e4eeffacdf5db8d1090cc4e9aecf30aa3107c82854d8b255c2beae75",
+        "uname_after": "root",
+        "gname_after": "root",
+        "mtime_after": "2026-06-24T17:58:38",
+        "inode_after": 2890690,
+        "event": "added"
+      },
+      "decoder": {
+        "name": "syscheck_new_entry"
+      },
+      "location": "syscheck"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:06:22.194+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-2ff3bcc719d8",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9915,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -578,7 +458,406 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:14:49.990+0000",
+      "timestamp": "2026-06-24T19:06:22.194+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782327982.8247",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:06:22.301+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9925,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:06:22.301+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782327982.9494",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:06:20 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:09:23.900+0000",
+    "rule_id": "100012",
+    "rule_level": 14,
+    "rule_description": "Malware - File with suspicious name created",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.999,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1204"
+      ],
+      "tactic": [
+        "Execution"
+      ],
+      "technique": [
+        "User Execution"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:09:23.900+0000",
+      "rule": {
+        "level": 14,
+        "description": "Malware - File with suspicious name created",
+        "id": "100012",
+        "mitre": {
+          "id": [
+            "T1204"
+          ],
+          "tactic": [
+            "Execution"
+          ],
+          "technique": [
+            "User Execution"
+          ]
+        },
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "malware",
+          "syscheck",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328163.10741",
+      "full_log": "File '/tmp/backdoor.sh' added\nMode: realtime\n",
+      "syscheck": {
+        "path": "/tmp/backdoor.sh",
+        "mode": "realtime",
+        "size_after": "0",
+        "perm_after": "rw-r--r--",
+        "uid_after": "0",
+        "gid_after": "0",
+        "md5_after": "d41d8cd98f00b204e9800998ecf8427e",
+        "sha1_after": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "uname_after": "root",
+        "gname_after": "root",
+        "mtime_after": "2026-06-24T19:09:23",
+        "inode_after": 4231334,
+        "event": "added"
+      },
+      "decoder": {
+        "name": "syscheck_new_entry"
+      },
+      "location": "syscheck"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:09:38.374+0000",
+    "rule_id": "550",
+    "rule_level": 7,
+    "rule_description": "Integrity checksum changed.",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.5098,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1565.001"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Stored Data Manipulation"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:09:38.374+0000",
+      "rule": {
+        "level": 7,
+        "description": "Integrity checksum changed.",
+        "id": "550",
+        "mitre": {
+          "id": [
+            "T1565.001"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Stored Data Manipulation"
+          ]
+        },
+        "firedtimes": 1,
+        "mail": false,
+        "groups": [
+          "ossec",
+          "syscheck",
+          "syscheck_entry_modified",
+          "syscheck_file"
+        ],
+        "pci_dss": [
+          "11.5"
+        ],
+        "gpg13": [
+          "4.11"
+        ],
+        "gdpr": [
+          "II_5.1.f"
+        ],
+        "hipaa": [
+          "164.312.c.1",
+          "164.312.c.2"
+        ],
+        "nist_800_53": [
+          "SI.7"
+        ],
+        "tsc": [
+          "PI1.4",
+          "PI1.5",
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328178.11288",
+      "full_log": "File '/tmp/backdoor.sh' modified\nMode: realtime\nChanged attributes: size,mtime,md5,sha1,sha256\nSize changed from '0' to '7'\nOld modification time was: '1782328163', now it is '1782328178'\nOld md5sum was: 'd41d8cd98f00b204e9800998ecf8427e'\nNew md5sum is : '0cd93ffea3b534cbfc35eb3ff9454648'\nOld sha1sum was: 'da39a3ee5e6b4b0d3255bfef95601890afd80709'\nNew sha1sum is : 'd26d95e59eefb27f72d409454f180339316f9195'\nOld sha256sum was: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'\nNew sha256sum is : 'd0ac605f54f4b7573f3e2b1cf53dee28d9899b9248a199c2a4aa4b1e6a3563f6'\n",
+      "syscheck": {
+        "path": "/tmp/backdoor.sh",
+        "mode": "realtime",
+        "size_before": "0",
+        "size_after": "7",
+        "perm_after": "rw-r--r--",
+        "uid_after": "0",
+        "gid_after": "0",
+        "md5_before": "d41d8cd98f00b204e9800998ecf8427e",
+        "md5_after": "0cd93ffea3b534cbfc35eb3ff9454648",
+        "sha1_before": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "sha1_after": "d26d95e59eefb27f72d409454f180339316f9195",
+        "sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_after": "d0ac605f54f4b7573f3e2b1cf53dee28d9899b9248a199c2a4aa4b1e6a3563f6",
+        "uname_after": "root",
+        "gname_after": "root",
+        "mtime_before": "2026-06-24T19:09:23",
+        "mtime_after": "2026-06-24T19:09:38",
+        "inode_after": 4231334,
+        "diff": "0a1\n> spooki\n",
+        "changed_attributes": [
+          "size",
+          "mtime",
+          "md5",
+          "sha1",
+          "sha256"
+        ],
+        "event": "modified"
+      },
+      "decoder": {
+        "name": "syscheck_integrity_changed"
+      },
+      "location": "syscheck"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:18:42.280+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:18:42.280+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328722.12555",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:18:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:08.282+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:08.282+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -604,16 +883,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216889.715409",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:49 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782328748.13803",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -627,13 +906,13 @@
     }
   },
   {
-    "timestamp": "2026-06-23T12:14:53.821+0000",
+    "timestamp": "2026-06-24T19:19:08.393+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-2ff3bcc719d8",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9977,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -647,7 +926,7 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:14:53.821+0000",
+      "timestamp": "2026-06-24T19:19:08.393+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -673,16 +952,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216893.716658",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:51 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:51 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:51 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:50 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:52 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782328748.15051",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:06 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -696,13 +975,13 @@
     }
   },
   {
-    "timestamp": "2026-06-23T12:14:53.928+0000",
+    "timestamp": "2026-06-24T19:19:08.486+0000",
     "rule_id": "100001",
     "rule_level": 12,
     "rule_description": "DDoS detected",
-    "agent": "wazuh-agent-d531065f00d0",
+    "agent": "wazuh-agent-2ff3bcc719d8",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9977,
     "action": "ESCALATE",
     "mitre": {
       "id": [
@@ -716,7 +995,7 @@
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:14:53.928+0000",
+      "timestamp": "2026-06-24T19:19:08.486+0000",
       "rule": {
         "level": 12,
         "description": "DDoS detected",
@@ -742,16 +1021,16 @@
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216893.717907",
-      "previous_output": "8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"\n8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
-      "full_log": "8.8.8.1 - - [23/Jun/2026:12:14:53 +0000] \"GET / HTTP/1.1\" 200 615 \"-\" \"curl/8.19.0\" \"-\"",
+      "id": "1782328748.16299",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
       "decoder": {
         "name": "web-accesslog"
       },
@@ -765,991 +1044,1176 @@
     }
   },
   {
-    "timestamp": "2026-06-23T12:15:28.239+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:28.239+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216928.719156",
-      "full_log": "File '/tmp/payload.sh' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/payload.sh",
-        "mode": "realtime",
-        "size_after": "8",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "0754ac3ddc26ee4ccfde05f81a2eafac",
-        "sha1_after": "0696d7a698116f51f228c04fecaa8c65400da057",
-        "sha256_after": "d18c26e029b88f66c159ed502abb2a86b3805eeea138098eba4ed5a763787686",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:28",
-        "inode_after": 581176,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:28.274+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:28.274+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 2,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216928.719702",
-      "full_log": "File '/tmp/backdoor.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/backdoor.php",
-        "mode": "realtime",
-        "size_after": "8",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "0754ac3ddc26ee4ccfde05f81a2eafac",
-        "sha1_after": "0696d7a698116f51f228c04fecaa8c65400da057",
-        "sha256_after": "d18c26e029b88f66c159ed502abb2a86b3805eeea138098eba4ed5a763787686",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:28",
-        "inode_after": 591222,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:28.274+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:28.274+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 3,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216928.720250",
-      "full_log": "File '/tmp/reverse_shell.sh' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/reverse_shell.sh",
-        "mode": "realtime",
-        "size_after": "8",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "0754ac3ddc26ee4ccfde05f81a2eafac",
-        "sha1_after": "0696d7a698116f51f228c04fecaa8c65400da057",
-        "sha256_after": "d18c26e029b88f66c159ed502abb2a86b3805eeea138098eba4ed5a763787686",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:28",
-        "inode_after": 591220,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:28.274+0000",
-    "rule_id": "100010",
+    "timestamp": "2026-06-24T19:19:08.621+0000",
+    "rule_id": "100001",
     "rule_level": 12,
-    "rule_description": "Malware - Suspicious file created in /tmp directory",
-    "agent": "wazuh-agent-d531065f00d0",
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
     "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
+    "confidence": 0.9977,
     "action": "ESCALATE",
     "mitre": {
       "id": [
-        "T1059"
+        "T1498"
       ],
       "tactic": [
-        "Execution"
+        "Impact"
       ],
       "technique": [
-        "Command and Scripting Interpreter"
+        "Network Denial of Service"
       ]
     },
     "full_alert": {
-      "timestamp": "2026-06-23T12:15:28.274+0000",
+      "timestamp": "2026-06-24T19:19:08.621+0000",
       "rule": {
         "level": 12,
-        "description": "Malware - Suspicious file created in /tmp directory",
-        "id": "100010",
+        "description": "DDoS detected",
+        "id": "100001",
         "mitre": {
           "id": [
-            "T1059"
+            "T1498"
           ],
           "tactic": [
-            "Execution"
+            "Impact"
           ],
           "technique": [
-            "Command and Scripting Interpreter"
+            "Network Denial of Service"
           ]
         },
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216928.720802",
-      "full_log": "File '/tmp/trojan.sh' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/trojan.sh",
-        "mode": "realtime",
-        "size_after": "8",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "0754ac3ddc26ee4ccfde05f81a2eafac",
-        "sha1_after": "0696d7a698116f51f228c04fecaa8c65400da057",
-        "sha256_after": "d18c26e029b88f66c159ed502abb2a86b3805eeea138098eba4ed5a763787686",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:28",
-        "inode_after": 591227,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:28.274+0000",
-    "rule_id": "100012",
-    "rule_level": 14,
-    "rule_description": "Malware - File with suspicious name created",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1204"
-      ],
-      "tactic": [
-        "Execution"
-      ],
-      "technique": [
-        "User Execution"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:28.274+0000",
-      "rule": {
-        "level": 14,
-        "description": "Malware - File with suspicious name created",
-        "id": "100012",
-        "mitre": {
-          "id": [
-            "T1204"
-          ],
-          "tactic": [
-            "Execution"
-          ],
-          "technique": [
-            "User Execution"
-          ]
-        },
-        "firedtimes": 4,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216928.721355",
-      "full_log": "File '/tmp/exploit.bin' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/tmp/exploit.bin",
-        "mode": "realtime",
-        "size_after": "8",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "0754ac3ddc26ee4ccfde05f81a2eafac",
-        "sha1_after": "0696d7a698116f51f228c04fecaa8c65400da057",
-        "sha256_after": "d18c26e029b88f66c159ed502abb2a86b3805eeea138098eba4ed5a763787686",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:28",
-        "inode_after": 591221,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:29.857+0000",
-    "rule_id": "100011",
-    "rule_level": 13,
-    "rule_description": "Malware - Suspicious file created in web directory (possible webshell)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1505.003"
-      ],
-      "tactic": [
-        "Persistence"
-      ],
-      "technique": [
-        "Web Shell"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:29.857+0000",
-      "rule": {
-        "level": 13,
-        "description": "Malware - Suspicious file created in web directory (possible webshell)",
-        "id": "100011",
-        "mitre": {
-          "id": [
-            "T1505.003"
-          ],
-          "tactic": [
-            "Persistence"
-          ],
-          "technique": [
-            "Web Shell"
-          ]
-        },
-        "firedtimes": 1,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216929.721902",
-      "full_log": "File '/usr/share/nginx/html/c99.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/usr/share/nginx/html/c99.php",
-        "mode": "realtime",
-        "size_after": "17",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "f107877feea35c7401fcc61c47c57fea",
-        "sha1_after": "b385416b7a0c9b0df13dab0ef07e4eeefa74d1c0",
-        "sha256_after": "e45c191d2940882dd047c39c5302f9ea3cc3da6cf2c70d9d0652dc650314314a",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:29",
-        "inode_after": 591289,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:29.863+0000",
-    "rule_id": "100011",
-    "rule_level": 13,
-    "rule_description": "Malware - Suspicious file created in web directory (possible webshell)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1505.003"
-      ],
-      "tactic": [
-        "Persistence"
-      ],
-      "technique": [
-        "Web Shell"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:29.863+0000",
-      "rule": {
-        "level": 13,
-        "description": "Malware - Suspicious file created in web directory (possible webshell)",
-        "id": "100011",
-        "mitre": {
-          "id": [
-            "T1505.003"
-          ],
-          "tactic": [
-            "Persistence"
-          ],
-          "technique": [
-            "Web Shell"
-          ]
-        },
-        "firedtimes": 2,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216929.722490",
-      "full_log": "File '/usr/share/nginx/html/cmd.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/usr/share/nginx/html/cmd.php",
-        "mode": "realtime",
-        "size_after": "17",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "f107877feea35c7401fcc61c47c57fea",
-        "sha1_after": "b385416b7a0c9b0df13dab0ef07e4eeefa74d1c0",
-        "sha256_after": "e45c191d2940882dd047c39c5302f9ea3cc3da6cf2c70d9d0652dc650314314a",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:29",
-        "inode_after": 4137,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:29.870+0000",
-    "rule_id": "100011",
-    "rule_level": 13,
-    "rule_description": "Malware - Suspicious file created in web directory (possible webshell)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1505.003"
-      ],
-      "tactic": [
-        "Persistence"
-      ],
-      "technique": [
-        "Web Shell"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:29.870+0000",
-      "rule": {
-        "level": 13,
-        "description": "Malware - Suspicious file created in web directory (possible webshell)",
-        "id": "100011",
-        "mitre": {
-          "id": [
-            "T1505.003"
-          ],
-          "tactic": [
-            "Persistence"
-          ],
-          "technique": [
-            "Web Shell"
-          ]
-        },
-        "firedtimes": 3,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216929.723076",
-      "full_log": "File '/usr/share/nginx/html/upload.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/usr/share/nginx/html/upload.php",
-        "mode": "realtime",
-        "size_after": "17",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "f107877feea35c7401fcc61c47c57fea",
-        "sha1_after": "b385416b7a0c9b0df13dab0ef07e4eeefa74d1c0",
-        "sha256_after": "e45c191d2940882dd047c39c5302f9ea3cc3da6cf2c70d9d0652dc650314314a",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:29",
-        "inode_after": 591287,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:29.877+0000",
-    "rule_id": "100011",
-    "rule_level": 13,
-    "rule_description": "Malware - Suspicious file created in web directory (possible webshell)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1505.003"
-      ],
-      "tactic": [
-        "Persistence"
-      ],
-      "technique": [
-        "Web Shell"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:29.877+0000",
-      "rule": {
-        "level": 13,
-        "description": "Malware - Suspicious file created in web directory (possible webshell)",
-        "id": "100011",
-        "mitre": {
-          "id": [
-            "T1505.003"
-          ],
-          "tactic": [
-            "Persistence"
-          ],
-          "technique": [
-            "Web Shell"
-          ]
-        },
-        "firedtimes": 4,
-        "mail": true,
-        "groups": [
-          "malware",
-          "syscheck",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216929.723667",
-      "full_log": "File '/usr/share/nginx/html/r57.php' added\nMode: realtime\n",
-      "syscheck": {
-        "path": "/usr/share/nginx/html/r57.php",
-        "mode": "realtime",
-        "size_after": "17",
-        "perm_after": "rw-r--r--",
-        "uid_after": "0",
-        "gid_after": "0",
-        "md5_after": "f107877feea35c7401fcc61c47c57fea",
-        "sha1_after": "b385416b7a0c9b0df13dab0ef07e4eeefa74d1c0",
-        "sha256_after": "e45c191d2940882dd047c39c5302f9ea3cc3da6cf2c70d9d0652dc650314314a",
-        "uname_after": "root",
-        "gname_after": "root",
-        "mtime_after": "2026-06-23T12:15:29",
-        "inode_after": 591291,
-        "event": "added"
-      },
-      "decoder": {
-        "name": "syscheck_new_entry"
-      },
-      "location": "syscheck"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:36.060+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:36.060+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 3,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216936.724255",
-      "full_log": "Jun 23 12:30:022403 agent root: curl http://10.20.30.40/malware_download",
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:36.104+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:36.104+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 6,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216936.724591",
-      "full_log": "Jun 23 12:30:017293 agent root: curl http://10.0.0.100/malware_download",
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:36.104+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:36.104+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 5,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216936.724926",
-      "full_log": "Jun 23 12:30:023144 agent root: curl http://172.16.0.50/malware_download",
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:36.104+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:36.104+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
-        "firedtimes": 4,
-        "mail": true,
-        "groups": [
-          "social_engineering",
-          "phishing",
-          "attack"
-        ]
-      },
-      "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
-        "ip": "8.8.8.3"
-      },
-      "manager": {
-        "name": "wazuh.manager"
-      },
-      "id": "1782216936.725262",
-      "full_log": "Jun 23 12:30:030083 agent root: curl http://192.168.99.1/malware_download",
-      "decoder": {},
-      "location": "/var/log/messages"
-    }
-  },
-  {
-    "timestamp": "2026-06-23T12:15:36.104+0000",
-    "rule_id": "100022",
-    "rule_level": 13,
-    "rule_description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-    "agent": "wazuh-agent-d531065f00d0",
-    "classification": "TRUE_POSITIVE",
-    "confidence": 1.0,
-    "action": "ESCALATE",
-    "mitre": {
-      "id": [
-        "T1071"
-      ],
-      "tactic": [
-        "Command and Control"
-      ],
-      "technique": [
-        "Application Layer Protocol"
-      ]
-    },
-    "full_alert": {
-      "timestamp": "2026-06-23T12:15:36.104+0000",
-      "rule": {
-        "level": 13,
-        "description": "Social Engineering - Suspicious outbound connection (possible C2 callback after phishing)",
-        "id": "100022",
-        "mitre": {
-          "id": [
-            "T1071"
-          ],
-          "tactic": [
-            "Command and Control"
-          ],
-          "technique": [
-            "Application Layer Protocol"
-          ]
-        },
+        "frequency": 50,
         "firedtimes": 7,
         "mail": true,
         "groups": [
-          "social_engineering",
-          "phishing",
+          "web",
+          "nginx",
           "attack"
         ]
       },
       "agent": {
-        "id": "001",
-        "name": "wazuh-agent-d531065f00d0",
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
         "ip": "8.8.8.3"
       },
       "manager": {
         "name": "wazuh.manager"
       },
-      "id": "1782216936.725599",
-      "full_log": "Jun 23 12:30:01634 agent root: curl http://203.0.113.5/malware_download",
-      "decoder": {},
-      "location": "/var/log/messages"
+      "id": "1782328748.17547",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:07 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:10.271+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:10.271+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 8,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328750.18795",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:10.375+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:10.375+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 9,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328750.20043",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:08 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:10.479+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:10.479+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 10,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328750.21291",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:10.584+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:10.584+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 11,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328750.22539",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:09 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:12.187+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:12.187+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 12,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328752.23787",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:12.291+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:12.291+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 13,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328752.25035",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:12.395+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:12.395+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 14,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328752.26283",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:10 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:19:12.500+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-2ff3bcc719d8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:19:12.500+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 15,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "004",
+        "name": "wazuh-agent-2ff3bcc719d8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782328752.27531",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:19:11 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:39.865+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9915,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:39.865+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 1,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330639.30593",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:41.833+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9925,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:41.833+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 2,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330641.31841",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:39 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:41.936+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:41.936+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 3,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330641.33089",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:40 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:42.040+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:42.040+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 4,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330642.34337",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:43.774+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:43.774+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 5,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330643.35585",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:41 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:43.878+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:43.878+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 6,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330643.36833",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:43.981+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:43.981+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 7,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330643.38081",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
+    }
+  },
+  {
+    "timestamp": "2026-06-24T19:50:44.086+0000",
+    "rule_id": "100001",
+    "rule_level": 12,
+    "rule_description": "DDoS detected",
+    "agent": "wazuh-agent-f3078bb314e8",
+    "classification": "TRUE_POSITIVE",
+    "confidence": 0.9977,
+    "action": "ESCALATE",
+    "mitre": {
+      "id": [
+        "T1498"
+      ],
+      "tactic": [
+        "Impact"
+      ],
+      "technique": [
+        "Network Denial of Service"
+      ]
+    },
+    "full_alert": {
+      "timestamp": "2026-06-24T19:50:44.086+0000",
+      "rule": {
+        "level": 12,
+        "description": "DDoS detected",
+        "id": "100001",
+        "mitre": {
+          "id": [
+            "T1498"
+          ],
+          "tactic": [
+            "Impact"
+          ],
+          "technique": [
+            "Network Denial of Service"
+          ]
+        },
+        "frequency": 50,
+        "firedtimes": 8,
+        "mail": true,
+        "groups": [
+          "web",
+          "nginx",
+          "attack"
+        ]
+      },
+      "agent": {
+        "id": "007",
+        "name": "wazuh-agent-f3078bb314e8",
+        "ip": "8.8.8.3"
+      },
+      "manager": {
+        "name": "wazuh.manager"
+      },
+      "id": "1782330644.39329",
+      "previous_output": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"\n8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "full_log": "8.8.8.1 - - [24/Jun/2026:19:50:42 +0000] \"GET / HTTP/1.1\" 200 896 \"-\" \"curl/8.20.0\" \"-\"",
+      "decoder": {
+        "name": "web-accesslog"
+      },
+      "data": {
+        "protocol": "GET",
+        "srcip": "8.8.8.1",
+        "id": "200",
+        "url": "/"
+      },
+      "location": "/var/log/nginx/access.log"
     }
   }
 ]

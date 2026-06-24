@@ -1,11 +1,11 @@
 {
-  "total_processed": 218,
-  "true_positives": 25,
-  "false_positives": 193,
-  "start_time": "2026-06-25T02:22:19.633063",
-  "end_time": "2026-06-25T02:22:21.751713",
-  "false_alarm_reduction_rate": "88.5%",
-  "true_positive_rate": "11.5%",
-  "alerts_requiring_human_review": 25,
-  "alerts_auto_suppressed": 193
+  "total_processed": 47,
+  "true_positives": 31,
+  "false_positives": 16,
+  "start_time": "2026-06-25T02:53:02.423701",
+  "end_time": "2026-06-25T02:53:02.885986",
+  "false_alarm_reduction_rate": "34.0%",
+  "true_positive_rate": "66.0%",
+  "alerts_requiring_human_review": 31,
+  "alerts_auto_suppressed": 16
 }
