@@ -39,15 +39,14 @@ stop: down clean
 restart: stop up status
 
 ddos:
-> for i in {1..100}; do curl -s -o /dev/null http://$(target) ; done
-
+> for i in {1..100}; do curl -s -o /dev/null http://$(target) ; done && \
+    docker exec fp_soc_07-wazuh.agent-1 cat /var/ossec/logs/active-responses.log
 malw:
 > docker exec fp_soc_07-wazuh.agent-1 bash -c 'echo "spooki" > /tmp/backdoor.sh' && \
     docker exec fp_soc_07-wazuh.agent-1 bash -c 'echo "spooki" > /usr/share/nginx/html/shell.php'
 
 social:
-> docker exec fp_soc_07-wazuh.agent-1 bash -c 'logger "curl http://10.0.0.0/payload executed by compromised user"' && \
-    docker exec fp_soc_07-wazuh.agent-1 cat /var/ossec/logs/active-responses.log
+> docker exec fp_soc_07-wazuh.agent-1 bash -c 'logger "curl http://10.0.0.0/payload executed by compromised user"'
 
 ai:
 > cd ./ai_model/ && python train_model.py && python wazuh_integration.py --batch

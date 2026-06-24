@@ -26,21 +26,21 @@
     "decoder_name_enc"
   ],
   "attack_rules": [
-    "100020",
     "100012",
-    "100010",
-    "100001",
+    "100021",
     "100013",
-    "100011",
     "100023",
+    "100020",
     "100022",
-    "100021"
+    "100001",
+    "100011",
+    "100010"
   ],
   "attack_groups": [
     "attack",
+    "social_engineering",
     "malware",
-    "phishing",
-    "social_engineering"
+    "phishing"
   ],
   "model_file": "soc_rf_model.pkl",
   "encoders_file": "label_encoders.pkl"
